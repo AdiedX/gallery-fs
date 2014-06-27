@@ -1,3 +1,5 @@
+
+
 {
   "name": "gallery-fs",
   "version": "0.0.0",
@@ -16,5 +18,5 @@
     "angular-mocks": ">=1.2.*",
     "angular-scenario": ">=1.2.*"
   },
-  "testPath": "test/client/spec"  
+  "testPath": "test/client/spec"
 }
