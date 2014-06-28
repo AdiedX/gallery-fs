@@ -10,27 +10,45 @@
       </p>
     <!--   <p><a class="btn btn-lg btn-success" ng-href="#"></a></p>
      -->
+
 </div>
 
-<div class="row marketing">
-<!--   <div ng-repeat="thing in awesomeThings">
-      <h4>{{thing.name}}</h4>
-      <p>{{thing.info}}</p>
-  </div> -->
+<div class="main-section">
+    Signup with LinkedIn to upload your projects
+    <br><br><br>
+    Login with LinkedIn if you have already signed up
+    <br>
+     <!-- First step: Add LinkedIn framework to the page: -->
+    <script type="text/javascript" src="http://platform.linkedin.com/in.js">
+        api_key: 775wtefbwpel6v
+        // authorize: true
+    </script>
+
+    <!-- Step two: Sign in with LinkedIn button: -->
+    <script type="in/Login">
+        Hello, <?js= firstName ?> <?js= lastName ?>.
+    </script>
 </div>
 
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <div class="footer main-footer">
     <p>Fullstack Academy, Making Great People Into Great Developers</p>
 </div>
-    <script>
-        $.backstretch([
-            'images/wall-pearl-1.jpg',
-            'images/broad-st-1.jpg',
-            'images/ny-stock-exchange.jpg',
-            'images/wall-pearl-2.jpg',
-            'images/broad-st-3.jpg',
-            ], {speed: 100});
-    </script>
+
+
+
+<!-- Set up dynamic background images:  -->
+<script>
+    $.backstretch([
+        'images/wall-pearl-1.jpg',
+        'images/broad-st-1.jpg',
+        'images/ny-stock-exchange.jpg',
+        'images/wall-pearl-2.jpg',
+        'images/broad-st-3.jpg',
+        ], {speed: 100});
+</script>
 
 
 

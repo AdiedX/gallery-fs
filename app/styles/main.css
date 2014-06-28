@@ -28,8 +28,9 @@ h1, h2, h3, h4, h5, h6 {
     color: #7F0000;
 }
 
-.main-login {
-
+.main-section {
+    text-align: center;
+    font-size: 1.5em;
 }
 
 .main-footer {
