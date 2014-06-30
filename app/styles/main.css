@@ -5,8 +5,10 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
     font-family: "Raleway";
-    font-weight: 100;
+    font-weight: 200;
     color: #EEE;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -31,6 +33,17 @@ h1, h2, h3, h4, h5, h6 {
 .main-section {
     text-align: center;
     font-size: 1.5em;
+}
+
+.sign-up input{
+    color: black;
+    font-size: 0.85em;
+/*    background-color: black;
+    opacity: 0.5;*/
+}
+
+#main-input{
+    margin-right: -5px;
 }
 
 .main-footer {
@@ -68,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
 .footer {
     padding-top: 19px;
     color: #CCC;
-    border-top: 1px solid #e5e5e5;
+/*    border-top: 1px solid #e5e5e5;*/
 }
 
 /* Customize container */

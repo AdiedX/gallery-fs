@@ -4,21 +4,11 @@
 
 <div class="main-title" turnred>
       <h1>Fullstack Academy <span style="font-family: Times New Roman;"><em>of</em></span> Code<!-- <span ng-show="currentUser">{{ currentUser.name }}</span> --></h1>
-      <p class="lead">
-    <!--     <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-        Always a pleasure scaffolding your apps. -->
-      </p>
-    <!--   <p><a class="btn btn-lg btn-success" ng-href="#"></a></p>
-     -->
-
 </div>
 
 <div class="main-section">
-    Login with LinkedIn if you have already signed up
-    <br><br>
-    Signup with LinkedIn to upload your projects
+    Login via LinkedIn to upload your awesome projects.
 
-    <br>
     <!-- LINKEDIN API -->
      <!-- First step: Include the LinkedIn JavaScript API & define a onLoad callback function: -->
     <script type="text/javascript" src="http://platform.linkedin.com/in.js">
@@ -46,14 +36,13 @@
         }
     </script>
     <br>
-    <!-- Step two: Sign in with LinkedIn button: -->
-    <script type="IN/Login">
-        <form action="/register.html">
-        <p>Name: <input type="text" name="name" value="<?js= firstName ?> <?js= lastName ?>" /></p>
-        <p>Password: <input type="password" name="password" /></p>
-        <input type="hidden" name="linkedin-id" value="<?js= id ?>" />
-        <input type="submit" name="submit" value="Sign Up"/>
-    </script>
+    <div class="sign-up">
+        <br>
+        <!-- Step two: Sign in with LinkedIn button: -->
+        <script type="IN/Login">
+            Hello, <?js= firstName ?> <?js= lastName ?>.
+        </script>
+    </div>
 </div>
 
 
@@ -67,13 +56,13 @@
 
 <!-- Set up dynamic background images:  -->
 <script>
-    // $.backstretch([
-    //     'images/wall-pearl-1.jpg',
-    //     'images/broad-st-1.jpg',
-    //     'images/ny-stock-exchange.jpg',
-    //     'images/wall-pearl-2.jpg',
-    //     'images/broad-st-3.jpg',
-    //     ], {speed: 100});
+    $.backstretch([
+        'images/wall-pearl-1.jpg',
+        // 'images/broad-st-1.jpg',
+        'images/broad-st-2.jpg',
+        // 'images/brooklyn-1.jpg',
+        'images/manhattan-1.jpg',
+        ], {fade: 1000}, {duration:4000});
 </script>
 
 
