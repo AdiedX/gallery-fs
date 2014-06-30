@@ -14,19 +14,45 @@
 </div>
 
 <div class="main-section">
-    Signup with LinkedIn to upload your projects
-    <br><br><br>
     Login with LinkedIn if you have already signed up
+    <br><br>
+    Signup with LinkedIn to upload your projects
+
     <br>
-     <!-- First step: Add LinkedIn framework to the page: -->
+    <!-- LINKEDIN API -->
+     <!-- First step: Include the LinkedIn JavaScript API & define a onLoad callback function: -->
     <script type="text/javascript" src="http://platform.linkedin.com/in.js">
         api_key: 775wtefbwpel6v
+        onLoad: onLinkedInLoad
         // authorize: true
     </script>
 
+    <script type="text/javascript">
+
+        // Runs when the JavaScript framework is loaded:
+        function onLinkedInLoad(){
+            IN.Event.on(IN, "auth", onLinkedInLoad);
+        }
+
+        // Runs when the viewer has authenticated:
+        function onLinkedInAuth(){
+            IN.API.Profile("me").result(displayProfiles);
+        }
+
+        // Runs when the Profile() API call returns successfully:
+        function displayProfiles(profiles){
+            member = profiles.values[0];
+            document.getElementById("profiles").innerHTML = "<p id=\"" + member.id + "\">Hello " + member.firstName + " " + member.lastName + "</p>";
+        }
+    </script>
+    <br>
     <!-- Step two: Sign in with LinkedIn button: -->
-    <script type="in/Login">
-        Hello, <?js= firstName ?> <?js= lastName ?>.
+    <script type="IN/Login">
+        <form action="/register.html">
+        <p>Name: <input type="text" name="name" value="<?js= firstName ?> <?js= lastName ?>" /></p>
+        <p>Password: <input type="password" name="password" /></p>
+        <input type="hidden" name="linkedin-id" value="<?js= id ?>" />
+        <input type="submit" name="submit" value="Sign Up"/>
     </script>
 </div>
 
@@ -41,13 +67,13 @@
 
 <!-- Set up dynamic background images:  -->
 <script>
-    $.backstretch([
-        'images/wall-pearl-1.jpg',
-        'images/broad-st-1.jpg',
-        'images/ny-stock-exchange.jpg',
-        'images/wall-pearl-2.jpg',
-        'images/broad-st-3.jpg',
-        ], {speed: 100});
+    // $.backstretch([
+    //     'images/wall-pearl-1.jpg',
+    //     'images/broad-st-1.jpg',
+    //     'images/ny-stock-exchange.jpg',
+    //     'images/wall-pearl-2.jpg',
+    //     'images/broad-st-3.jpg',
+    //     ], {speed: 100});
 </script>
 
 
