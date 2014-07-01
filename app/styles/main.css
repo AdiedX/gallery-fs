@@ -42,6 +42,10 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 0.5;*/
 }
 
+.sign-up button{
+    font-weight: 100;
+}
+
 #main-input{
     margin-right: -5px;
 }
