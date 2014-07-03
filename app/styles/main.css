@@ -1,18 +1,109 @@
 
 
+html{
+    height: 100%;
+}
 /* Space out content a bit */
 body {
-    padding-top: 20px;
-    padding-bottom: 20px;
+/*    padding-top: 20px;
+    padding-bottom: 20px;*/
     font-family: "Raleway";
     font-weight: 200;
     color: #EEE;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
+    height: 100%;
+}
+
+div.col-md-3{
+    float: left;
+    height: 100%;
+}
+
+div.col-md-9{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body.ng-scope{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container-fluid.ng-scope{
+    height: 100%;
+    /*padding: 0px;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 200;
+}
+
+/* GALLERY PAGE */
+
+.row{
+/*    float: right;
+    padding: 15px;
+    display: inline-block;*/
+    height: 100%;
+}
+
+.ng-scope{
+    height: 100%;
+}
+
+/*div.container.ng-scope{
+    margin: 0px;
+    padding: 0px;
+}*/
+
+/*.container-fluid{
+
+}*/
+
+div.navigation.col-md-3{
+    padding: 0px;
+ /*   margin: 0px;*/
+    height: 100%;
+}
+
+div.gallery-row{
+    height: 200px;
+    width: 200px;
+    background-color: #333;
+    margin: 23px;
+    display: inline-block;
+}
+
+#gallery-sidebar{
+    background-color: black;
+    font-weight: normal;
+    text-align: center;
+    font-size: 2em;
+    padding-top: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+input.form-control{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row{
+    height: 100%;
+}
+
+/* ANIMATION CLASSES */
+
+.evolve-white{
+    color: #FFF;
+    font-weight: 300;
+}
+
+.evolve-red{
+    color: red;
 }
 
 /*--------------------------------------*/
@@ -56,7 +147,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------*/
-
 
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
