@@ -2,45 +2,16 @@
 
 <div ng-include="'partials/navbar'"></div>
 
-<div class="main-title" turnred>
+<div class="main-title" ng-class="{'evolve-red': adi === true}" ng-mouseenter="adi = true" ng-mouseleave="adi = false">
       <h1>Fullstack Academy <span style="font-family: Times New Roman;"><em>of</em></span> Code<!-- <span ng-show="currentUser">{{ currentUser.name }}</span> --></h1>
 </div>
 
 <div class="main-section">
-    Login via LinkedIn to upload your awesome projects.
-
-    <!-- LINKEDIN API -->
-     <!-- First step: Include the LinkedIn JavaScript API & define a onLoad callback function: -->
-    <script type="text/javascript" src="http://platform.linkedin.com/in.js">
-        api_key: 775wtefbwpel6v
-        onLoad: onLinkedInLoad
-        // authorize: true
-    </script>
-
-    <script type="text/javascript">
-
-        // Runs when the JavaScript framework is loaded:
-        function onLinkedInLoad(){
-            IN.Event.on(IN, "auth", onLinkedInLoad);
-        }
-
-        // Runs when the viewer has authenticated:
-        function onLinkedInAuth(){
-            IN.API.Profile("me").result(displayProfiles);
-        }
-
-        // Runs when the Profile() API call returns successfully:
-        function displayProfiles(profiles){
-            member = profiles.values[0];
-            document.getElementById("profiles").innerHTML = "<p id=\"" + member.id + "\">Hello " + member.firstName + " " + member.lastName + "</p>";
-        }
-    </script>
-    <br>
+    <p ng-class="{'evolve-white': Andrew === true}" ng-mouseenter="Andrew = true" ng-mouseleave="Andrew = false">Login via LinkedIn to upload your awesome projects.</p>
     <div class="sign-up">
-        <br>
         <a class="btn btn-danger btn-md active" href='/auth/linkedin' target="_self">Upload</a>
         <br><br><br>
-        <p>Just take a look around</p>
+        <p ng-class="{'evolve-white': Stav === true}" ng-mouseenter="Stav = true" ng-mouseleave="Stav = false">Just take a look around</p>
         <button class="btn btn-danger btn-md active">Browse</button>
     </div>
 </div>

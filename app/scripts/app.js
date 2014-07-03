@@ -15,6 +15,10 @@ app.config(function ($routeProvider, $locationProvider, $httpProvider) {
         templateUrl: 'partials/main',
         controller: 'MainCtrl'
       })
+      .when('/gallery', {
+        templateUrl: 'partials/gallery',
+        controller: 'GalleryCtrl'
+      })
       .when('/login', {
         templateUrl: 'partials/login',
         controller: 'LoginCtrl'
