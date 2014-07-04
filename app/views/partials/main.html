@@ -1,20 +1,48 @@
 
 
-<div ng-include="'partials/navbar'"></div>
+<!-- <div ng-include="'partials/navbar'"></div> -->
 
-<div class="main-title" ng-class="{'evolve-red': adi === true}" ng-mouseenter="adi = true" ng-mouseleave="adi = false">
-      <h1>Fullstack Academy <span style="font-family: Times New Roman;"><em>of</em></span> Code<!-- <span ng-show="currentUser">{{ currentUser.name }}</span> --></h1>
-</div>
+<div class="main-title" ng-class="{'evolve-white': adi === true}" ng-mouseenter="adi = true" ng-mouseleave="adi = false">
+    <!-- THE FOLLOWING CODE NEEDS TO BE REFACTORED: -->
+    <div class="header" ng-controller="NavbarCtrl" style="height:0;">
+        <ul class="nav nav-pills pull-right">
+            <!-- Hides 'HOME' and 'SETTINGS' on main.html, because they aren't necessary: -->
+    <!--         <li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
+                <a ng-href="{{item.link}}">{{item.title}}</a>
+            </li> -->
+    <!--         <li class="main-login" ng-hide="currentUser" ng-class="{active: isActive('/login')}">
+                <a href="/login">Login via LinkedIn </a>
+            </li> -->
+            <!-- Hides the 'SIGN UP' option, as it is not required: -->
+    <!--         <li ng-hide="currentUser" ng-class="{active: isActive('/signup')}">
+                <a href="/signup">Sign up</a>
+            </li> -->
+            <li ng-show="currentUser" ng-class="{active: isActive('/logout')}">
+                <a href="" ng-click="logout()">Logout</a>
+            </li>
+        </ul>
+      <h3 class="text-muted"></h3>
+    </div>
+    <!-- END CODE -->
 
-<div class="main-section">
-    <p ng-class="{'evolve-white': Andrew === true}" ng-mouseenter="Andrew = true" ng-mouseleave="Andrew = false">Login via LinkedIn to upload your awesome projects.</p>
-    <div class="sign-up">
-        <a class="btn btn-danger btn-md active" href='/auth/linkedin' target="_self">Upload</a>
-        <br><br><br>
-        <p ng-class="{'evolve-white': Stav === true}" ng-mouseenter="Stav = true" ng-mouseleave="Stav = false">Just take a look around</p>
-        <button class="btn btn-danger btn-md active">Browse</button>
+
+    <div class="main-section">
+
+        <p ng-class="{'evolve-white': Andrew === true}" ng-mouseenter="Andrew = true" ng-mouseleave="Andrew = false">
+            <h1 style="margin-right:'-60px;'">Fullstack Academy <span style="font-family: Times New Roman;"><em>of</em></span> Code</h1>
+            <br>
+            Login via LinkedIn to upload your awesome projects.
+        </p>
+        <div class="sign-up">
+            <a class="btn btn-danger btn-md active" href='/auth/linkedin' target="_self">Login</a>
+            <br><br><br>
+            <p ng-class="{'evolve-white': Stav === true}" ng-mouseenter="Stav = true" ng-mouseleave="Stav = false">Just take a look around</p>
+            <button class="btn btn-danger btn-md active">Browse</button>
+        </div>
     </div>
 </div>
+
+
 
 
 
