@@ -119,7 +119,6 @@ input.form-control{
 
 .main-title{
     text-align: center;
-    margin: 100px;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
@@ -128,21 +127,20 @@ input.form-control{
     color: #7F0000;
 }
 
-.main-section{
+/*.main-section{
     text-align: center;
+    font-size: 1.5em;
+    position: fixed;
+    margin: 0 auto;
+    float: right;
+}*/
+
+
+.main-browse{
     font-size: 1.5em;
 }
 
-.sign-up input{
-    color: black;
-    font-size: 0.85em;
-/*    background-color: black;
-    opacity: 0.5;*/
-}
 
-.sign-up button{
-    font-weight: 100;
-}
 
 #main-input{
     margin-right: -5px;

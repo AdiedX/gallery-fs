@@ -1,8 +1,10 @@
 
 
-<!-- <div ng-include="'partials/navbar'"></div> -->
+<!-- <div ng-include="'partials/navbar'"></div>
+ -->
+<div class="main-title">
 
-<div class="main-title" ng-class="{'evolve-white': adi === true}" ng-mouseenter="adi = true" ng-mouseleave="adi = false">
+
     <!-- THE FOLLOWING CODE NEEDS TO BE REFACTORED: -->
     <div class="header" ng-controller="NavbarCtrl" style="height:0;">
         <ul class="nav nav-pills pull-right">
@@ -25,18 +27,17 @@
     </div>
     <!-- END CODE -->
 
-
-    <div class="main-section">
-
+    <br><br><br><br>
+    <div>
         <p ng-class="{'evolve-white': Andrew === true}" ng-mouseenter="Andrew = true" ng-mouseleave="Andrew = false">
-            <h1 style="margin-right:'-60px;'">Fullstack Academy <span style="font-family: Times New Roman;"><em>of</em></span> Code</h1>
-            <br>
-            Login via LinkedIn to upload your awesome projects.
+            <h1 id="main-header" ng-class="{'evolve-white': adi === true}" ng-mouseenter="adi = true" ng-mouseleave="adi = false" style="margin-right:'-60px;'">Fullstack Academy <span style="font-family: Times New Roman;"><em>of</em></span> Code</h1>
         </p>
-        <div class="sign-up">
-            <a class="btn btn-danger btn-md active" href='/auth/linkedin' target="_self">Login</a>
-            <br><br><br>
-            <p ng-class="{'evolve-white': Stav === true}" ng-mouseenter="Stav = true" ng-mouseleave="Stav = false">Just take a look around</p>
+        <div class="main-browse">
+                <!-- DUE TO CHANGE OF REQUIREMENTS, THE LINKEDIN LOGIN WILL BE UTILIZED IN A LATER COMMENTS FEATURE.  IT'S NO LONGER NECESSARY TO BE ON THE HOME PAGE. -->
+<!--             <a class="btn btn-danger btn-md active" href='/auth/linkedin' target="_self">Login</a> -->
+            <br>
+            <p ng-class="{'evolve-white': Stav === true}" ng-mouseenter="Stav = true" ng-mouseleave="Stav = false">Browse through the awesome projects our students have done.</p>
+            <!-- MAY BE ADD ANIMATION TO THE BROWSE BUTTON? -->
             <button class="btn btn-danger btn-md active">Browse</button>
         </div>
     </div>
@@ -46,11 +47,10 @@
 
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<div class="footer main-footer">
+<!-- <div class="footer main-footer">
     <p ng-class="{'evolve-white': footer === true}" ng-mouseenter="footer = true" ng-mouseleave="footer = false">Fullstack Academy, Making Great People Into Great Developers</p>
 </div>
-
+ -->
 
 
 <!-- Set up dynamic background images:  -->
