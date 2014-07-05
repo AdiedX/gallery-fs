@@ -6,7 +6,8 @@ var app = angular.module('galleryFsApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
-  'ngRoute'
+  'ngRoute',
+  'wu.masonry'
 ]);
 
 app.config(function ($routeProvider, $locationProvider, $httpProvider) {
@@ -17,7 +18,7 @@ app.config(function ($routeProvider, $locationProvider, $httpProvider) {
       })
       .when('/gallery', {
         templateUrl: 'partials/gallery',
-        controller: 'GalleryCtrl'
+        // controller: 'GalleryCtrl'
       })
       .when('/login', {
         templateUrl: 'partials/login',

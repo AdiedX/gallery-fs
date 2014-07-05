@@ -39,6 +39,33 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 200;
 }
 
+/* MASONRY CLASSES */
+
+/*.masonry-brick {
+    height: 450px;
+    background-color: #333;
+    font-size: 2em;
+    text-align: center;
+    border: 1px solid white;
+    display: inline-block;
+    padding: 10% 0%;
+}
+
+.test{
+    height: 600px;
+    background-color: #333;
+    font-size: 2em;
+    text-align: center;
+    border: 1px solid white;
+    display: inline-block;
+    padding: 10% 0%;
+}
+
+.masonry-brick.loaded {
+    display: block;
+}*/
+
+
 /*GALLERY PAGE*/
 
 div.ng-scope{
