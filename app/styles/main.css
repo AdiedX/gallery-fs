@@ -68,22 +68,29 @@ div.navigation.col-md-2{
     text-align: center;
     border: 1px solid white;
     display: inline-block;
+    padding: 10% 0%;
 }
 
 #gallery-sidebar{
     background-color: black;
     font-weight: normal;
+    /*font-family: "Open Sans Condensed";*/
     text-align: center;
     font-size: 2em;
     padding-top: 40px;
     width: 100%;
     min-height: 100%;
     position: absolute;
+    /* THE SIDEBAR EXTENSION CODE */
+    margin-bottom: -5000px;
+    padding-bottom: 5000px;
+    overflow: hidden;
+    /* END CODE */
 }
 
 #gallery-header{
-    font-weight: 200;
-    font-size: 1.7em;
+    font-weight: 400;
+    font-size: 0.8em;
 }
 
 #gallery-search{
