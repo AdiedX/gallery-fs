@@ -117,12 +117,12 @@ div.navigation.col-md-2{
 
 #gallery-header{
     font-weight: 400;
-    font-size: 0.8em;
+    font-size: 1.15em;
 }
 
 #gallery-subheader{
-    font-weight: 200;
-    font-size: 1.7em;
+    font-weight: 300;
+    font-size: 1.15em;
 }
 /* NEED MEDIA QUERIES TO ADJUST THE SUBHEADER SIZE FOR MEDIUM, SMALL, AND XTRASMALL DEVICES*/
 
@@ -132,6 +132,19 @@ div.navigation.col-md-2{
     font-size: 0.65em;
     font-weight: 200;
     color: black;
+}
+
+@media (max-width: 1170px){
+    #gallery-header, #gallery-subheader{
+        font-size: 1.0em;
+    }
+}
+
+@media (max-width: 950px){
+    #gallery-subheader, #gallery-header{
+        font-size: 0.8em;
+    }
+
 }
 
 .content{
