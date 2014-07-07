@@ -30,7 +30,7 @@
     <br><br><br><br>
     <div>
         <p ng-class="{'evolve-white': Andrew === true}" ng-mouseenter="Andrew = true" ng-mouseleave="Andrew = false">
-            <p id="main-header" ng-class="{'evolve-white': adi === true}" ng-mouseenter="adi = true" ng-mouseleave="adi = false">Fullstack Academy <span style="font-family: Times New Roman;"><em>of</em></span>
+            <p id="main-header" class="dn animated fadeIn" ng-class="{'evolve-white': adi === true}" ng-mouseenter="adi = true" ng-mouseleave="adi = false">Fullstack Academy <span style="font-family: Times New Roman;"><em>of</em></span>
                 Code
             </p>
         </p>
@@ -38,11 +38,11 @@
                 <!-- DUE TO CHANGE OF REQUIREMENTS, THE LINKEDIN LOGIN WILL BE UTILIZED IN A LATER COMMENTS FEATURE.  IT'S NO LONGER NECESSARY TO BE ON THE HOME PAGE. -->
 <!--             <a class="btn btn-danger btn-md active" href='/auth/linkedin' target="_self">Login</a> -->
             <br>
-            <p id="main-subheader" ng-class="{'evolve-white': Stav === true}" ng-mouseenter="Stav = true" ng-mouseleave="Stav = false">Browse through the awesome projects our students have done.</p>
+            <p id="main-subheader" class="da animated fadeIn" ng-class="{'evolve-white': Stav === true}" ng-mouseenter="Stav = true" ng-mouseleave="Stav = false">Browse through the awesome projects our students have done.</p>
             <!-- MAY BE ADD ANIMATION TO THE BROWSE BUTTON? -->
             <br>
             <a href="gallery">
-                <button id="main-browse" class="btn btn-danger btn-md active">Browse
+                <button id="main-browse" class="zz animated bounceInUp btn btn-danger btn-md active">Browse
                 </button>
             </a>
         </div>
@@ -62,12 +62,12 @@
 <!-- Set up dynamic background images:  -->
 <script>
     $.backstretch([
-        'images/wall-pearl-1.jpg',
-        // 'images/broad-st-1.jpg',
-        'images/broad-st-2.jpg',
-        // 'images/brooklyn-1.jpg',
         'images/manhattan-1.jpg',
-        'images/stone-st-1.jpg'
+        'images/stone-st-1.jpg',
+        'images/wall-pearl-1.jpg',
+        'images/broad-st-1.jpg',
+        'images/broad-st-2.jpg'
+        // 'images/brooklyn-1.jpg',
         ], {fade: 1000}, {duration:4000});
 </script>
 

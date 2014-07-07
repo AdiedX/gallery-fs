@@ -10,25 +10,25 @@ app.controller('GalleryCtrl', function ($scope, $http) {
     });
     $scope.projects = [
         {
-            'images/wall-pearl-1.jpg'
+            imageUrl:'images/wall-pearl-1.jpg'
         },
         {
-            'images/manhattan-1.jpg'
+            imageUrl:'images/manhattan-1.jpg'
         },
         {
-            'images/stone-st-1.jpg'
+            imageUrl:'images/stone-st-1.jpg'
         },
         {
-            'images/broad-st-1.jpg'
+            imageUrl:'images/broad-st-1.jpg'
         },
         {
-            'images/brooklyn-1.jpg'
+            imageUrl:'images/brooklyn-1.jpg'
         },
         {
-            'images/wall-pearl-1.jpg'
+            imageUrl:'images/wall-pearl-1.jpg'
         },
         {
-            'images/broad-st-2.jpg'
-        },
+            imageUrl:'images/broad-st-2.jpg'
+        }
     ];
 });

@@ -3,7 +3,7 @@
 <div id="gallery-holy">
         <div class="navigation col-lg-2 col-md-2 col-sm-2 col-xs-0">
             <div id="gallery-sidebar">
-                <p id="gallery-header" ng-class="{'evolve-white': event1 === true}" ng-mouseenter="event1 = true" ng-mouseleave="event1 = false">
+                <p id="gallery-header" class="zo animated fadeInLeft" ng-class="{'evolve-white': event1 === true}" ng-mouseenter="event1 = true" ng-mouseleave="event1 = false">
                     <span style="font-weight: bold;">FULLSTACK</span> ACADEMY
                     <span style="font-family: Times;">
                         <em>of</em>
@@ -11,18 +11,26 @@
                     CODE
                     <br><br>
                 </p>
-                <p id="gallery-subheader" ng-class="{'evolve-white': event2 === true}" ng-mouseenter="event2 = true" ng-mouseleave="event2 = false">
+                <p id="gallery-subheader" class="zo animated flash" ng-class="{'evolve-white': event2 === true}" ng-mouseenter="event2 = true" ng-mouseleave="event2 = false">
                     THE
                     <br>
                     PROJECTS
                 </p>
                 <br>
-                <input id="gallery-search" type="search" placeholder="  Search">
+                <input id="gallery-search" class="zz animated fadeInUpBig" type="search" placeholder="  Search">
             </div>
         </div>
         <!-- INJECT MASONRY -->
-        <div masonry>
-        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 content">
+        <!--  masonry ng-controller="GalleryCtrl as gallery" -->
+        <div>
+            <!-- masonry-brick  -->
+            <!-- ng-repeat="project in projects" -->
+        <div class="dr animated fadeIn col-lg-10 col-md-10 col-sm-10 col-xs-12 content">
+                <div class="col-sm-6 col-md-6 col-lg-4 gallery-row">
+                    <!-- <img class="photo" src="{{project.imageUrl}}"> -->
+                Your project here with awesome animations and summary and stuff ...
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4 gallery-row">Your project here with awesome animations and summary and stuff ...</div>
                 <div class="col-sm-6 col-md-6 col-lg-4 gallery-row">Your project here with awesome animations and summary and stuff ...</div>
                 <div class="col-sm-6 col-md-6 col-lg-4 gallery-row">Your project here with awesome animations and summary and stuff ...</div>
                 <div class="col-sm-6 col-md-6 col-lg-4 gallery-row">Your project here with awesome animations and summary and stuff ...</div>
