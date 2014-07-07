@@ -1,7 +1,8 @@
 
 
 <div id="gallery-holy">
-        <div class="navigation col-lg-2 col-md-2 col-sm-2 col-xs-0">
+        <div class="navigation ">
+            <!-- col-lg-2 col-md-2 col-sm-2 col-xs-0 -->
             <div id="gallery-sidebar">
                 <p id="gallery-header" class="zo animated fadeInLeft" ng-class="{'evolve-white': event1 === true}" ng-mouseenter="event1 = true" ng-mouseleave="event1 = false">
                     <span style="font-weight: bold;">FULLSTACK</span> ACADEMY
@@ -21,15 +22,16 @@
             </div>
         </div>
         <!-- INJECT MASONRY -->
-        <!--  masonry ng-controller="GalleryCtrl as gallery" -->
-        <div>
+        <!--   ng-controller="GalleryCtrl as gallery" -->
+
             <!-- masonry-brick  -->
-            <!-- ng-repeat="project in projects" -->
-        <div class="dr animated fadeIn col-lg-10 col-md-10 col-sm-10 col-xs-12 content">
-                <div class="col-sm-6 col-md-6 col-lg-4 gallery-row">
-                    <!-- <img class="photo" src="{{project.imageUrl}}"> -->
-                Your project here with awesome animations and summary and stuff ...
-                </div>
+            <!--  ng-repeat="project in projects" -->
+        <div class="dr animated fadeIn content">
+            <!-- col-lg-12 col-md-12 col-sm-10 col-xs-12  -->
+            <!--     <div class="col-sm-6 col-md-6 col-lg-4 gallery-row" >
+                    <img class="photo" ng-src="{{project.imageUrl}}" style="height: 200px; width: 200px;"> -->
+                <!-- Your project here with awesome animations and summary and stuff ... -->
+            <!--     </div> -->
                 <div class="col-sm-6 col-md-6 col-lg-4 gallery-row">Your project here with awesome animations and summary and stuff ...</div>
                 <div class="col-sm-6 col-md-6 col-lg-4 gallery-row">Your project here with awesome animations and summary and stuff ...</div>
                 <div class="col-sm-6 col-md-6 col-lg-4 gallery-row">Your project here with awesome animations and summary and stuff ...</div>
@@ -42,5 +44,5 @@
                 <div class="col-sm-6 col-md-6 col-lg-4 gallery-row">Your project here with awesome animations and summary and stuff ...</div>
                 <div class="col-sm-6 col-md-6 col-lg-4 gallery-row">Your project here with awesome animations and summary and stuff ...</div>
         </div>
-        </div>
+
 </div>

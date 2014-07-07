@@ -66,10 +66,10 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 200;
 }
 
-div.ng-scope{
+/*div.ng-scope{
     height: 100%;
     width: 100%;
-}
+}*/
 
 div.container-fluid.ng-scope{
     margin: 0px;
@@ -149,12 +149,15 @@ div.container-fluid.ng-scope{
     height: 800px;
 }
 
+
+
 /*----------------------*/
 /*    GALLERY PAGE      */
 /*----------------------*/
 
 #gallery-holy{
     font-family: "Open Sans Condensed";
+    padding-left: 200px;
 }
 
 div.navigation.col-md-2{
@@ -169,24 +172,24 @@ div.navigation.col-md-2{
     font-size: 2em;
     text-align: center;
     border: 1px solid white;
-/*    display: inline-block;*/
     padding: 10% 0%;
 }
 
 #gallery-sidebar{
     background-color: black;
     font-weight: normal;
-    /*font-family: "Open Sans Condensed";*/
+    margin-left: -200px;
     text-align: center;
     font-size: 2em;
     padding-top: 40px;
-    width: 100%;
+    width: 200px;
     min-height: 100%;
-    position: absolute;
+    /*PENDING: position: fixed*/
+    position: fixed;
     /* THE SIDEBAR EXTENSION CODE */
-    margin-bottom: -5000px;
+/*    margin-bottom: -5000px;
     padding-bottom: 5000px;
-    overflow: hidden;
+    overflow: hidden;*/
     /* END CODE */
 }
 
@@ -213,11 +216,10 @@ div.navigation.col-md-2{
 }
 
 .photo{
-    height: 100%;
+    height: 300px;
     max-width: 100%;
     display: block;
-    border: 2px;
-    border-radius: 10px;
+    border: 1px white solid;
 }
 
 @media (max-width: 1200px){
@@ -239,7 +241,7 @@ div.navigation.col-md-2{
 }
 
 .content{
-    position: relative;
+
 }
 
 
