@@ -129,14 +129,14 @@ div.container-fluid.ng-scope{
 .project-header, .project-description, .project-screenshot, .project-screencast, .project-developers, .project-socialicons{
     text-align: center;
     font-family: "Open Sans Condensed";
-    font-size: 2em;
+    font-size: 1em;
     font-weight: 400;
     color: #000;
     height: 50%;
 }
 
 .project-header{
-    font-size: 5em;
+    font-size: 3em;
     height: 15%;
 }
 
@@ -146,6 +146,7 @@ div.container-fluid.ng-scope{
 
 .project-container{
     width: 400px;
+    height: 800px;
 }
 
 /*----------------------*/
