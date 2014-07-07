@@ -30,9 +30,11 @@
     <br><br><br><br>
     <div>
         <p ng-class="{'evolve-white': Andrew === true}" ng-mouseenter="Andrew = true" ng-mouseleave="Andrew = false">
-            <p id="main-header" ng-class="{'evolve-white': adi === true}" ng-mouseenter="adi = true" ng-mouseleave="adi = false" style="margin-right:'-60px;'">Fullstack Academy <span style="font-family: Times New Roman;"><em>of</em></span> Code</p>
+            <p id="main-header" ng-class="{'evolve-white': adi === true}" ng-mouseenter="adi = true" ng-mouseleave="adi = false">Fullstack Academy <span style="font-family: Times New Roman;"><em>of</em></span>
+                Code
+            </p>
         </p>
-        <div class="main-browse">
+        <div>
                 <!-- DUE TO CHANGE OF REQUIREMENTS, THE LINKEDIN LOGIN WILL BE UTILIZED IN A LATER COMMENTS FEATURE.  IT'S NO LONGER NECESSARY TO BE ON THE HOME PAGE. -->
 <!--             <a class="btn btn-danger btn-md active" href='/auth/linkedin' target="_self">Login</a> -->
             <br>
@@ -40,7 +42,8 @@
             <!-- MAY BE ADD ANIMATION TO THE BROWSE BUTTON? -->
             <br>
             <a href="gallery">
-                <button class="btn btn-danger btn-md active">Browse</button>
+                <button id="main-browse" class="btn btn-danger btn-md active">Browse
+                </button>
             </a>
         </div>
     </div>

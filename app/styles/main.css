@@ -39,6 +39,36 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 200;
 }
 
+div.ng-scope{
+    height: 100%;
+    width: 100%;
+}
+
+div.container-fluid.ng-scope{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container-fluid{
+
+}
+
+/* ANIMATION CLASSES */
+.evolve-white{
+    color: #FFF;
+    font-weight: 300;
+}
+
+.evolve-red{
+    color: red;
+}
+
+/*----------------------*/
+/*    PROJECT PAGE      */
+/*----------------------*/
+/*PENDING*/
+
+
 /* MASONRY CLASSES */
 
 /*.masonry-brick {
@@ -65,21 +95,11 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
 }*/
 
-
-/*GALLERY PAGE*/
-
-div.ng-scope{
-    height: 100%;
-    width: 100%;
-}
-
-div.container-fluid.ng-scope{
-    margin: 0px;
-    padding: 0px;
-}
-
-.container-fluid{
-
+/*----------------------*/
+/*    GALLERY PAGE      */
+/*----------------------*/
+#gallery-holy{
+    font-family: "Open Sans Condensed";
 }
 
 div.navigation.col-md-2{
@@ -94,7 +114,7 @@ div.navigation.col-md-2{
     font-size: 2em;
     text-align: center;
     border: 1px solid white;
-    display: inline-block;
+/*    display: inline-block;*/
     padding: 10% 0%;
 }
 
@@ -117,14 +137,17 @@ div.navigation.col-md-2{
 
 #gallery-header{
     font-weight: 400;
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 #gallery-subheader{
     font-weight: 400;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
-/* NEED MEDIA QUERIES TO ADJUST THE SUBHEADER SIZE FOR MEDIUM, SMALL, AND XTRASMALL DEVICES*/
+
+#gallery-subheader, #gallery-header{
+    color: #CCC;
+}
 
 #gallery-search{
     width: 80%;
@@ -138,13 +161,18 @@ div.navigation.col-md-2{
     #gallery-header, #gallery-subheader{
         font-size: 0.9em;
     }
+    #gallery-search{
+        font-size: 0.5em;
+    }
 }
 
 @media (max-width: 950px){
     #gallery-subheader, #gallery-header{
         font-size: 0.8em;
     }
-
+    #gallery-search{
+        font-size: 0.35em;
+    }
 }
 
 .content{
@@ -152,21 +180,11 @@ div.navigation.col-md-2{
 }
 
 
-/* ANIMATION CLASSES
-*/
-.evolve-white{
-    color: #FFF;
-    font-weight: 300;
-}
 
-.evolve-red{
-    color: red;
-}
 
-/*--------------------------------------
-/* MAIN PAGE */
-/*--------------------------------------*/
-
+/*----------------------*/
+/*    MAIN PAGE         */
+/*----------------------*/
 .main-title{
     text-align: center;
     text-rendering: optimizeLegibility;
@@ -174,24 +192,48 @@ div.navigation.col-md-2{
 }
 
 #main-header{
-    font-size: 4em;
+    font-size: 3.3em;
 }
 
 #main-subheader{
-    font-size: 1.3em;
-}
-
-.turn-red{
-    color: #7F0000;
-}
-
-.main-browse{
-    font-size: 1.5em;
+    font-size: 1.8em;
 }
 
 #main-input{
     margin-right: -5px;
 }
+
+@media (max-width: 1100px){
+    #main-header{
+        font-size: 2.3em;
+    }
+    #main-subheader{
+        font-size: 1.3em;
+    }
+/*    #main-browse{
+        width: 35px;
+        height: 20px;
+        font-size: 1em;
+        text-align: center;
+    }*/
+}
+/*
+@media (max-width: 900px){
+    #main-header{
+        font-size: 1.8em;
+    }
+    #main-subheader{
+        font-size: 1.0em;
+    }
+    #main-browse{
+        width: 30px;
+        height: 15px;
+        font-size: 0.6em;
+        text-align: left;
+    }
+}*/
+
+
 
 .main-footer{
     text-align: center;
@@ -201,79 +243,3 @@ div.navigation.col-md-2{
 /*--------------------------------------*/
 
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-/*.header,
-.marketing,
-.footer {
-    padding-left: 15px;
-    padding-right: 15px;
-}*/
-
-/* Custom page header */
-.header {
-/*    border-bottom: 1px solid #e5e5e5;
-*/}
-
-/* Make the masthead heading the same height as the navigation */
-/*.header h3 {
-    margin-top: 0;
-    margin-bottom: 0;
-    line-height: 40px;
-    padding-bottom: 19px;
-    font-weight: 200;
-}*/
-
-/* Custom page footer */
-.footer{
-    padding-top: 19px;
-    color: #CCC;
-/*    border-top: 1px solid #e5e5e5;*/
-}
-
-/* Customize container */
-@media (min-width: 768px){
-  .container {
-    max-width: 730px;
-  }
-}
-.container-narrow > hr {
-    margin: 30px 0;
-}
-
-/* Main marketing message and sign up button */
-/*.jumbotron {
-    text-align: center;
-    border-bottom: 1px solid #e5e5e5;
-    background-color: none;
-}
-.jumbotron .btn {
-    font-size: 21px;
-    padding: 14px 24px;
-}*/
-
-/* Supporting marketing content */
-/*.marketing {
-    margin: 40px 0;
-}
-.marketing p + h4 {
-    margin-top: 28px;
-}*/
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-  /* Remove the padding we set earlier */
-/*  .header,
-  .marketing,
-  .footer {
-    padding-left: 0;
-    padding-right: 0;
-  }*/
-  /* Space out the masthead */
-/*  .header {
-    margin-bottom: 30px;
-  }*/
-  /* Remove the bottom border on the jumbotron for visual effect */
-/*  .jumbotron {
-    border-bottom: 0;
-  }*/
-}
