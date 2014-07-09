@@ -18,7 +18,7 @@
                     PROJECTS
                 </p>
                 <br>
-                <input id="gallery-search" class="zz animated fadeIn" type="search" placeholder="  Search">
+                <input id="gallery-search" class="zn animated fadeIn" type="search" placeholder="  Search" ng-model="search">
             </div>
         </div>
         <!-- INJECT MASONRY -->
@@ -26,7 +26,7 @@
 
             <!-- masonry-brick  -->
             <!--  ng-repeat="project in projects" -->
-        <div class="dr animated fadeIn content" ng-repeat="project in projectData track by $index">
+        <div class="zn animated fadeIn content" ng-repeat="project in projectData | filter: searchFunc">
             <!-- col-lg-12 col-md-12 col-sm-10 col-xs-12  -->
             <div ng-show="project.screenshotLink !== ''">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 gallery-row" style="background-image: url('{{project.screenshotLink}}'); background-size: cover; background-repeat: no-repeat; background-position: 50% 0%;" ng-mouseenter="mouseEvent = true" ng-mouseleave="mouseEvent = false" ng-class="{'gallery-info': mouseEvent === true}">

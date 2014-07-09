@@ -191,6 +191,12 @@ p.project-description{
     text-align: left;
 }
 
+.project-description > span{
+    color: black;
+    font-size: 1.6em;
+    text-align: left;
+}
+
 .project-github{
     border-bottom: 1px solid gray;
 }
@@ -201,17 +207,24 @@ p.project-description{
     padding-right: 5%;
 }
 
-.project-floatLeft{
-    float: left;
-    height: 100%;
-    background-color: black;
+p.project-developers{
+    color: black;
+    font-size: 1.6em;
+    text-align: left;
 }
 
-.project-floatRight{
-    float: right;
-    height: 100%;
-    background-color: black;
+.project-developers > span{
+    color: black;
+    font-size: 1.6em;
+    text-align: left;
 }
+
+.project-developers > div{
+    color: black;
+    font-size: 1.6em;
+    text-align: left;
+}
+
 
 .project-section{
     background-color: black;

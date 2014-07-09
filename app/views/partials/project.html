@@ -7,33 +7,36 @@
 <section class="project-section">
     <div class="project-container">
         <div class="project-screenshot">
-            <img style="height: 100%; width: 100%; background-size: cover; background-repeat: no-repeat; background-position: 50% 0%;" src="{{projectData.screenshotLink}}">
+            <img style="height: 100%; width: 100%; background-size: cover; background-repeat: no-repeat; background-position: 50% 0%;" src="{{projectData.screenshotLink}}" class="da animated fadeIn">
         </div>
         <br><br>
-        <p class="project-header">
+        <p class="project-header zo animated bounceInLeft">
             {{projectData.projectName}}
-            <a href="{{projectData.github}}" class="fa fa-github"></a>
+                <a href="{{projectData.github}}" class="fa fa-github"></a>
         </p>
         <br><br><br><br>
-        <p class="project-pitch">
+        <p class="project-pitch zo animated bounceInLeft">
             {{projectData.projectPitch}}
         </p>
         <br><br>
-        <p class="project-description">
-            <span style="font-size: 1.5em;">Description</span>
+        <p class="project-description zn animated bounceInLeft">
+            <span>Description</span>
             <br><br>
             {{projectData.projectDescription}}
         </p>
         <br>
-        <div class="project-screencast" ng-show="projectData.screencastLink !== ''">
+<!--         <div class="project-screencast" ng-show="projectData.screencastLink !== ''">
             Screencast goes here
-        </div>
+        </div> -->
+        <br>
+        <p class="project-developers zz animated bounceInLeft">
+            <span>Meet the Developers</span>
+            <br>
+            <div class="zz animated bounceInLeft" ng-repeat="dev in projectData.developers" style="font-size: 1.5em; font-weight: normal;">
+                {{dev}}
+            </div>
+        </p>
         <br><br>
-        <p class="project-developers">Meet the Developers</p>
-        <div  ng-repeat="dev in projectData.developers">
-            {{dev}}
-        </div>
-
         <div class="project-socialicons">
 
         </div>
