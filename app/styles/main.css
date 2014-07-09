@@ -90,30 +90,37 @@ div.container-fluid.ng-scope{
 }
 
 .evolve-red{
-    color: #AA0036;
+/*    text-shadow: 0 0 0.2em #AA0036, 0 0 0.2em #AA0036,
+        0 0 0.2em #AA0036;*/
+        color: red;
 }
-
 
 .gallery-info > .overlay {
     height: 100%;
     width: 100%;
     position:absolute;
     background-color: #000;
-    opacity: 0.8;
+    opacity: 0.65;
     display: block;
 }
 
 .gallery-info > .overlay > h1, p{
     color: #FFF;
     font-weight: 500;
+/*    text-shadow: 0 0 0.2em #AA0036, 0 0 0.2em #AA0036,
+        0 0 0.2em #AA0036;*/
 }
 
 .gallery-info > .overlay > h1{
     font-size: 1.0em;
+    color: #FFF;
+/*    text-shadow: 0 0 0.2em #AA0036, 0 0 0.2em #AA0036,
+        0 0 0.2em #AA0036;*/
 }
 
 .gallery-info > .overlay > p{
     font-size: 0.8em;
+    /*color: white; text-shadow: black 0.1em 0.1em 0.2em;*/
 }
 
 /*----------------------*/
@@ -161,21 +168,61 @@ div.container-fluid.ng-scope{
 .project-header{
     font-size: 3em;
     height: 15%;
+    clear: left;
+    float: left;
+    padding-right: 15px;
 }
 
-/*.project-description{
-    padding: 15px;
-}*/
+.project-header > a{
+    text-decoration: none;
+    color: black;
+}
+
+.project-pitch{
+    color: black;
+    font-size: 1.4em;
+    padding-bottom: 30px;
+    border-bottom: 1px solid gray;
+}
+
+p.project-description{
+    color: black;
+    font-size: 1.6em;
+    text-align: left;
+}
 
 .project-github{
-    height: 20%;
+    border-bottom: 1px solid gray;
 }
 
 .project-container{
     background-color: white;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
+.project-floatLeft{
+    float: left;
+    height: 100%;
+    background-color: black;
+}
 
+.project-floatRight{
+    float: right;
+    height: 100%;
+    background-color: black;
+}
+
+.project-section{
+    background-color: black;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: #000;
+}
+
+.project-screenshot{
+    height: 500px;
+}
 
 /*----------------------*/
 /*    GALLERY PAGE      */
@@ -197,9 +244,15 @@ div.navigation.col-md-2{
     background-color: #333;
     font-size: 2em;
     text-align: center;
-    border: 1px solid white;
+    border: 4px solid #000;
     /*padding: 10% 0%;*/
     padding: 0px 0px 0px 0px;
+}
+
+@media (max-width: 1199px){
+    .gallery-row{
+        height: 600px;
+    }
 }
 
 #gallery-sidebar{
@@ -268,9 +321,9 @@ div.navigation.col-md-2{
     }
 }
 
-.content{
+/*.content{
 
-}
+}*/
 
 
 

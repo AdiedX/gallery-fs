@@ -1,41 +1,46 @@
 
 
-<div class="project-container">
-    <br><br><br>
-    <div class="project-header">
-        {{projectData.projectName}}
-    </div>
-    <div class="project-github">
-        {{projectData.github}}
-    </div>
-    <div class="project-description">
-        <div style="font-size: 2em;">
-            {{projectData.projectDescription}}
+<!--
+<div class="project-floatLeft">
+</div> -->
+<div style="background-color: black;">
+<section class="project-section">
+    <div class="project-container">
+        <div class="project-screenshot">
+            <img style="height: 100%; width: 100%; background-size: cover; background-repeat: no-repeat; background-position: 50% 0%;" src="{{projectData.screenshotLink}}">
         </div>
+        <br><br>
+        <p class="project-header">
+            {{projectData.projectName}}
+            <a href="{{projectData.github}}" class="fa fa-github"></a>
+        </p>
+        <br><br><br><br>
+        <p class="project-pitch">
+            {{projectData.projectPitch}}
+        </p>
+        <br><br>
+        <p class="project-description">
+            <span style="font-size: 1.5em;">Description</span>
+            <br><br>
+            {{projectData.projectDescription}}
+        </p>
         <br>
+        <div class="project-screencast" ng-show="projectData.screencastLink !== ''">
+            Screencast goes here
+        </div>
+        <br><br>
+        <p class="project-developers">Meet the Developers</p>
+        <div  ng-repeat="dev in projectData.developers">
+            {{dev}}
+        </div>
 
-    </div>
-    <div class="project-screenshot">
-        <img style="height: 100%; width: 100%;" src="{{projectData.screenshotLink}}">
+        <div class="project-socialicons">
+
+        </div>
     </div>
 
-    <div class="project-screencast">
-        Screencast goes here
-    </div>
-
-    <div class="project-developers">
-        Developers names go here
-    </div>
-
-    <div class="project-socialicons">
-
-    </div>
+    <!-- <div class="project-floatRight">
+    </div> -->
+</section>
 </div>
-
-
-
-
-
-
-
 

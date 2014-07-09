@@ -10,4 +10,15 @@ app.controller('GalleryCtrl', function ($scope, $http, $location) {
     });
 
     $scope.$location = $location;
+
+    var displayProject = function(){
+        for(var i = 0; i < $scope.projectData.length; i++){
+            if($scope.projectData[i].screenshotLink !== ''){
+                return true;
+            } else{
+                return false;
+            }
+        }
+    }
 });
+

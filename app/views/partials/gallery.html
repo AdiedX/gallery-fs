@@ -4,7 +4,7 @@
         <div class="navigation ">
             <!-- col-lg-2 col-md-2 col-sm-2 col-xs-0 -->
             <div id="gallery-sidebar">
-                <p id="gallery-header" class="zo animated fadeInLeft" ng-class="{'evolve-white': event1 === true}" ng-mouseenter="event1 = true" ng-mouseleave="event1 = false">
+                <p id="gallery-header" class="zo animated fadeInLeft" ng-class="{'evolve-red': event1 === true}" ng-mouseenter="event1 = true" ng-mouseleave="event1 = false">
                     <span style="font-weight: bold;">FULLSTACK</span> ACADEMY
                     <span style="font-family: Times;">
                         <em>of</em>
@@ -12,7 +12,7 @@
                     CODE
                     <br><br>
                 </p>
-                <p id="gallery-subheader" class="zo animated flash" ng-class="{'evolve-white': event2 === true}" ng-mouseenter="event2 = true" ng-mouseleave="event2 = false">
+                <p id="gallery-subheader" class="zo animated flash" ng-class="{'evolve-red': event2 === true}" ng-mouseenter="event2 = true" ng-mouseleave="event2 = false">
                     THE
                     <br>
                     PROJECTS
@@ -28,7 +28,8 @@
             <!--  ng-repeat="project in projects" -->
         <div class="dr animated fadeIn content" ng-repeat="project in projectData track by $index">
             <!-- col-lg-12 col-md-12 col-sm-10 col-xs-12  -->
-                <div class="col-sm-6 col-md-6 col-lg-6 gallery-row" style="background-image: url('{{project.screenshotLink}}'); background-size: 100% 100%;" ng-mouseenter="mouseEvent = true" ng-mouseleave="mouseEvent = false" ng-class="{'gallery-info': mouseEvent === true}">
+            <div ng-show="project.screenshotLink !== ''">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 gallery-row" style="background-image: url('{{project.screenshotLink}}'); background-size: cover; background-repeat: no-repeat; background-position: 50% 0%;" ng-mouseenter="mouseEvent = true" ng-mouseleave="mouseEvent = false" ng-class="{'gallery-info': mouseEvent === true}">
                     <div class="overlay" ng-show="mouseEvent === true" ng-click="$location.path('/project/' + project.id)">
                         <h1>{{project.projectName}}</h1>
                         <p>{{project.projectDescription}}</p>
@@ -36,6 +37,7 @@
      <!--                <img class="photo" ng-src="{{project.imageUrl}}" style="height: 200px; width: 200px;"> -->
                 <!-- Your project here with awesome animations and summary and stuff ... -->
                 </div>
+            </div>
 <!--                 <div class="col-sm-6 col-md-6 col-lg-4 gallery-row">Your project here with awesome animations and summary and stuff ...</div>
                 <div class="col-sm-6 col-md-6 col-lg-4 gallery-row">Your project here with awesome animations and summary and stuff ...</div>
                 <div class="col-sm-6 col-md-6 col-lg-4 gallery-row">Your project here with awesome animations and summary and stuff ...</div>
