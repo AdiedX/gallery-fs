@@ -3,17 +3,20 @@
 <div class="project-container">
     <br><br><br>
     <div class="project-header">
-        THE PROJECT NAME
+        {{projectData.projectName}}
     </div>
     <div class="project-github">
-        Github
+        {{projectData.github}}
     </div>
     <div class="project-description">
-        <div style="font-size: 2em;">DESCRIPTION</div><br>
-        WikiTalk was designed with the idea that it would be fun to be able to have a discussion about any existing "thing." Given the wealth of articles on Wikipedia, it was the perfect source to base user searches on. To search for an article, users type into an input box that uses Google's Freebase API and has an autocomplete feature. Once an article is selected, a modal (pop-up) window comes up that features the article's title, image, and a brief description. Users can then add the article as a favorite and leave comments and interact with other users. All articles that are added as favorites appear on the user's home screen in a cool, animated way (using Isotope).
+        <div style="font-size: 2em;">
+            {{projectData.projectDescription}}
+        </div>
+        <br>
+
     </div>
     <div class="project-screenshot">
-        Screenshot goes here
+        <img style="height: 100%; width: 100%;" src="{{projectData.screenshotLink}}">
     </div>
 
     <div class="project-screencast">

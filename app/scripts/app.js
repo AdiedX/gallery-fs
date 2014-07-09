@@ -20,7 +20,7 @@ app.config(function ($routeProvider, $locationProvider, $httpProvider) {
         templateUrl: 'partials/gallery',
         controller: 'GalleryCtrl'
       })
-      .when('/gallery/project', {
+      .when('/project/:id', {
         templateUrl: 'partials/project',
         controller: 'ProjectCtrl'
       })

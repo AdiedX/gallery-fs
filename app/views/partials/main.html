@@ -2,53 +2,54 @@
 
 <!-- <div ng-include="'partials/navbar'"></div>
  -->
-<div class="main-title">
+<div class="main-fixed">
+    <div class="main-title">
 
 
-    <!-- THE FOLLOWING CODE NEEDS TO BE REFACTORED: -->
-    <div class="header" ng-controller="NavbarCtrl" style="height:0;">
-        <ul class="nav nav-pills pull-right">
-            <!-- Hides 'HOME' and 'SETTINGS' on main.html, because they aren't necessary: -->
-    <!--         <li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
-                <a ng-href="{{item.link}}">{{item.title}}</a>
-            </li> -->
-    <!--         <li class="main-login" ng-hide="currentUser" ng-class="{active: isActive('/login')}">
-                <a href="/login">Login via LinkedIn </a>
-            </li> -->
-            <!-- Hides the 'SIGN UP' option, as it is not required: -->
-    <!--         <li ng-hide="currentUser" ng-class="{active: isActive('/signup')}">
-                <a href="/signup">Sign up</a>
-            </li> -->
-            <li ng-show="currentUser" ng-class="{active: isActive('/logout')}">
-                <a href="" ng-click="logout()">Logout</a>
-            </li>
-        </ul>
-      <h3 class="text-muted"></h3>
-    </div>
-    <!-- END CODE -->
+        <!-- THE FOLLOWING CODE NEEDS TO BE REFACTORED: -->
+        <div class="header" ng-controller="NavbarCtrl" style="height:0;">
+            <ul class="nav nav-pills pull-right">
+                <!-- Hides 'HOME' and 'SETTINGS' on main.html, because they aren't necessary: -->
+        <!--         <li ng-repeat="item in menu" ng-class="{active: isActive(item.link)}">
+                    <a ng-href="{{item.link}}">{{item.title}}</a>
+                </li> -->
+        <!--         <li class="main-login" ng-hide="currentUser" ng-class="{active: isActive('/login')}">
+                    <a href="/login">Login via LinkedIn </a>
+                </li> -->
+                <!-- Hides the 'SIGN UP' option, as it is not required: -->
+        <!--         <li ng-hide="currentUser" ng-class="{active: isActive('/signup')}">
+                    <a href="/signup">Sign up</a>
+                </li> -->
+                <li ng-show="currentUser" ng-class="{active: isActive('/logout')}">
+                    <a href="" ng-click="logout()">Logout</a>
+                </li>
+            </ul>
+          <h3 class="text-muted"></h3>
+        </div>
+        <!-- END CODE -->
 
-    <br><br><br><br>
-    <div>
-        <p ng-class="{'evolve-white': Andrew === true}" ng-mouseenter="Andrew = true" ng-mouseleave="Andrew = false">
-            <p id="main-header" class="dn animated fadeIn" ng-class="{'evolve-white': adi === true}" ng-mouseenter="adi = true" ng-mouseleave="adi = false">Fullstack Academy <span style="font-family: Times New Roman;"><em>of</em></span>
-                Code
+        <br><br><br><br>
+        <div class="main-container">
+            <p ng-class="{'evolve-white': Andrew === true}" ng-mouseenter="Andrew = true" ng-mouseleave="Andrew = false">
+                <p id="main-header" class="dn animated fadeIn" ng-class="{'evolve-white': adi === true}" ng-mouseenter="adi = true" ng-mouseleave="adi = false"><span style="font-weight: bold;">FULLSTACK </span>ACADEMY <span style="font-family: Times New Roman;"><em>of</em></span>
+                    CODE
+                </p>
             </p>
-        </p>
-        <div>
-                <!-- DUE TO CHANGE OF REQUIREMENTS, THE LINKEDIN LOGIN WILL BE UTILIZED IN A LATER COMMENTS FEATURE.  IT'S NO LONGER NECESSARY TO BE ON THE HOME PAGE. -->
-<!--             <a class="btn btn-danger btn-md active" href='/auth/linkedin' target="_self">Login</a> -->
-            <br>
-            <p id="main-subheader" class="da animated fadeIn" ng-class="{'evolve-white': Stav === true}" ng-mouseenter="Stav = true" ng-mouseleave="Stav = false">Browse through the awesome projects our students have done.</p>
-            <!-- MAY BE ADD ANIMATION TO THE BROWSE BUTTON? -->
-            <br>
-            <a href="gallery">
-                <button id="main-browse" class="zz animated bounceInUp btn btn-danger btn-md active">Browse
-                </button>
-            </a>
+            <div>
+                    <!-- DUE TO CHANGE OF REQUIREMENTS, THE LINKEDIN LOGIN WILL BE UTILIZED IN A LATER COMMENTS FEATURE.  IT'S NO LONGER NECESSARY TO BE ON THE HOME PAGE. -->
+    <!--             <a class="btn btn-danger btn-md active" href='/auth/linkedin' target="_self">Login</a> -->
+                <br><br><br>
+                <p id="main-subheader" class="da animated fadeIn" ng-class="{'evolve-white': Stav === true}" ng-mouseenter="Stav = true" ng-mouseleave="Stav = false">Browse through the awesome projects our students have done.</p>
+                <!-- MAY BE ADD ANIMATION TO THE BROWSE BUTTON? -->
+                <br><br>
+                <a href="gallery">
+                    <button id="main-browse" class="zz animated bounceInUp btn btn-danger btn-md active">Browse
+                    </button>
+                </a>
+            </div>
         </div>
     </div>
 </div>
-
 
 
 
