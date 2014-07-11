@@ -21,34 +21,16 @@
                 <input id="gallery-search" class="zn animated fadeIn" type="search" placeholder="  Search" ng-model="search">
             </div>
         </div>
-        <!-- INJECT MASONRY -->
-        <!--   ng-controller="GalleryCtrl as gallery" -->
-
-            <!-- masonry-brick  -->
-            <!--  ng-repeat="project in projects" -->
         <div class="zn animated fadeIn content" ng-repeat="project in projectData | filter: searchFunc">
-            <!-- col-lg-12 col-md-12 col-sm-10 col-xs-12  -->
             <div ng-show="project.screenshotLink !== ''">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 gallery-row" style="background-image: url('{{project.screenshotLink}}'); background-size: cover; background-repeat: no-repeat; background-position: 50% 0%;" ng-mouseenter="mouseEvent = true" ng-mouseleave="mouseEvent = false" ng-class="{'gallery-info': mouseEvent === true}">
-                    <div class="overlay" ng-show="mouseEvent === true" ng-click="$location.path('/project/' + project.id)">
+                    <div class="overlay" ng-show="mouseEvent === true" ng-click="$location.path('/project/' + project.id)"> <br><br><br><br><br><br>
                         <h1>{{project.projectName}}</h1>
-                        <p>{{project.projectDescription}}</p>
+                        <p>{{project.projectPitch}}</p>
                     </div>
-     <!--                <img class="photo" ng-src="{{project.imageUrl}}" style="height: 200px; width: 200px;"> -->
-                <!-- Your project here with awesome animations and summary and stuff ... -->
                 </div>
             </div>
-<!--                 <div class="col-sm-6 col-md-6 col-lg-4 gallery-row">Your project here with awesome animations and summary and stuff ...</div>
-                <div class="col-sm-6 col-md-6 col-lg-4 gallery-row">Your project here with awesome animations and summary and stuff ...</div>
-                <div class="col-sm-6 col-md-6 col-lg-4 gallery-row">Your project here with awesome animations and summary and stuff ...</div>
-                <div class="col-sm-6 col-md-6 col-lg-4 gallery-row">Your project here with awesome animations and summary and stuff ...</div>
-                <div class="col-sm-6 col-md-6 col-lg-4 gallery-row">Your project here with awesome animations and summary and stuff ...</div>
-                <div class="col-sm-6 col-md-6 col-lg-4 gallery-row">Your project here with awesome animations and summary and stuff ...</div>
-                <div class="col-sm-6 col-md-6 col-lg-4 gallery-row">Your project here with awesome animations and summary and stuff ...</div>
-                <div class="col-sm-6 col-md-6 col-lg-4 gallery-row">Your project here with awesome animations and summary and stuff ...</div>
-                <div class="col-sm-6 col-md-6 col-lg-4 gallery-row">Your project here with awesome animations and summary and stuff ...</div>
-                <div class="col-sm-6 col-md-6 col-lg-4 gallery-row">Your project here with awesome animations and summary and stuff ...</div>
-                <div class="col-sm-6 col-md-6 col-lg-4 gallery-row">Your project here with awesome animations and summary and stuff ...</div> -->
+
         </div>
 
 </div>

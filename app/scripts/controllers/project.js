@@ -10,3 +10,11 @@ app.controller('ProjectCtrl', function ($scope, $http, $routeParams) {
         $scope.projectData = projectData;
     });
 });
+
+// app.directive('image', function(){
+//     return {
+//         restrict: 'E',
+//         controller:
+//     };
+// });
+

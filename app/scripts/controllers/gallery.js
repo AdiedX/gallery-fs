@@ -15,7 +15,8 @@ app.controller('GalleryCtrl', function ($scope, $http, $location) {
         // Create boolean value:
         var text_val = true;
         var tech_tags = proj.techTags.join('');
-        var proj_text = ('' + proj.projectName + proj.description + proj.pitch + tech_tags).toLowerCase();
+        var devs = proj.developers.join('');
+        var proj_text = ('' + proj.projectName + proj.description + proj.pitch + tech_tags + devs).toLowerCase();
         if(lowerInput.length > 0){
             if(proj_text.indexOf(lowerInput) > -1){
                 console.log(proj);

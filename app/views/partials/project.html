@@ -4,48 +4,61 @@
 <div class="project-floatLeft">
 </div> -->
 <div style="background-color: black;">
-<section class="project-section">
-    <div class="project-container">
-        <div class="project-screenshot">
-            <a href="{{projectData.liveUrl}}">
-                <img style="height: 100%; width: 100%; background-size: cover; background-repeat: no-repeat; background-position: 50% 0%;" src="{{projectData.screenshotLink}}" class="da animated fadeIn">
-            </a>
-        </div>
-        <br><br>
-        <p class="project-header zo animated bounceInLeft">
-            {{projectData.projectName}}
-                <a href="{{projectData.github}}" class="fa fa-github"></a>
-        </p>
-        <br><br><br><br>
-        <p class="project-pitch zo animated bounceInLeft">
-            {{projectData.projectPitch}}
-        </p>
-        <br><br>
-        <p class="project-description zn animated bounceInLeft">
-            <span>Description</span>
-            <br><br>
-            {{projectData.projectDescription}}
-        </p>
-        <br>
-<!--         <div class="project-screencast" ng-show="projectData.screencastLink !== ''">
-            Screencast goes here
-        </div> -->
-        <br>
-        <p class="project-developers zz animated bounceInLeft">
-            <span>Meet the Developers</span>
-            <br>
-            <div class="zz animated bounceInLeft" ng-repeat="dev in projectData.developers" style="font-size: 1.5em; font-weight: normal;">
-                {{dev}}
+    <section class="project-section">
+        <div class="project-container">
+            <div class="project-screenshot">
+                <a href="{{projectData.liveUrl || '/project/:id'}}">
+                    <img style="height: 100%; width: 100%; background-size: cover; background-repeat: no-repeat; background-position: 50% 0%;" src="{{projectData.screenshotLink}}" class="da animated fadeIn">
+                </a>
             </div>
-        </p>
-        <br><br>
-        <div class="project-socialicons">
-
+            <br><br>
+            <p class="project-header zo animated bounceInLeft">
+                {{projectData.projectName}}
+                    <span ng-show="projectData.github !== ''">
+                        <a href="{{projectData.github}}" class="fa fa-github"></a>
+                    </span>
+            </p>
+            <br><br><br><br>
+            <p class="project-pitch zo animated bounceInLeft">
+                {{projectData.projectPitch}}
+            </p>
+            <br><br>
+            <p class="project-description zn animated bounceInLeft">
+                <span>Description</span>
+                <br><br>
+                {{projectData.projectDescription}}
+            </p>
+            <br>
+    <!--         <div class="project-screencast" ng-show="projectData.screencastLink !== ''">
+                Screencast goes here
+            </div> -->
+            <br>
+            <p class="project-developers zz animated bounceInLeft">
+                <span>Meet the Developers</span>
+                <br>
+                <div class="zz animated bounceInLeft" ng-repeat="dev in projectData.developers" style="font-size: 1.5em; font-weight: 300;">
+                    {{dev}}  <span ng-show="{{projectData.devLinkedIn}}"><a href="{{projectData.devLinkedIn}}" class="fa fa-linkedin"></a><span> <span ng-show="projectData.devGitHub"><a href="{{projectData.devGitHub}}" class="fa fa-github"></a></span>
+                </div>
+            </p>
+            <br><br>
+            <div class="project-socialicons">
+                <p>This is where the social network icons go</p>
+            </div>
+            <br><br>
+            <div class="project-comments">
+                <!-- We are doing comments the HTML way -->
+                <!-- begin htmlcommentbox.com -->
+                 <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Widget</a> is loading comments...
+                 </div>
+                 <link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+                 <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=(""+window.location).replace(/'/g,"%27") || hcb_user.PAGE, h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&opts=16862&num=10");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+                <!-- end htmlcommentbox.com -->
+            </div>
+            <br><br><br><br>
         </div>
-    </div>
 
-    <!-- <div class="project-floatRight">
-    </div> -->
-</section>
+        <!-- <div class="project-floatRight">
+        </div> -->
+    </section>
 </div>
 

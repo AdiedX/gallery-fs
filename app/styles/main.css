@@ -95,62 +95,6 @@ div.container-fluid.ng-scope{
         color: red;
 }
 
-.gallery-info > .overlay {
-    height: 100%;
-    width: 100%;
-    position:absolute;
-    background-color: #000;
-    opacity: 0.65;
-    display: block;
-}
-
-.gallery-info > .overlay > h1, p{
-    color: #FFF;
-    font-weight: 500;
-/*    text-shadow: 0 0 0.2em #AA0036, 0 0 0.2em #AA0036,
-        0 0 0.2em #AA0036;*/
-}
-
-.gallery-info > .overlay > h1{
-    font-size: 1.0em;
-    color: #FFF;
-/*    text-shadow: 0 0 0.2em #AA0036, 0 0 0.2em #AA0036,
-        0 0 0.2em #AA0036;*/
-}
-
-.gallery-info > .overlay > p{
-    font-size: 0.8em;
-    /*color: white; text-shadow: black 0.1em 0.1em 0.2em;*/
-}
-
-/*----------------------*/
-/*    MASONRY CLASSES   */
-/*----------------------*/
-
-/*.masonry-brick {
-    height: 450px;
-    background-color: #333;
-    font-size: 2em;
-    text-align: center;
-    border: 1px solid white;
-    display: inline-block;
-    padding: 10% 0%;
-}
-
-.test{
-    height: 600px;
-    background-color: #333;
-    font-size: 2em;
-    text-align: center;
-    border: 1px solid white;
-    display: inline-block;
-    padding: 10% 0%;
-}
-
-.masonry-brick.loaded {
-    display: block;
-}*/
-
 
 /*----------------------*/
 /*    PROJECT PAGE      */
@@ -160,7 +104,7 @@ div.container-fluid.ng-scope{
     text-align: center;
     font-family: "Raleway";
     font-size: 1em;
-    font-weight: 400;
+    font-weight: 300;
     color: #000;
     height: 50%;
 }
@@ -237,9 +181,24 @@ p.project-developers{
     height: 500px;
 }
 
+.project-socialicons{
+    height: 60px;
+    width: 100%;
+    font-size: 1.2em;
+    background-color: black;
+    padding: 15px;
+}
+
+
 /*----------------------*/
 /*    GALLERY PAGE      */
 /*----------------------*/
+
+a.fa{
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+}
 
 #gallery-holy{
     font-family: "Raleway";
@@ -257,7 +216,7 @@ div.navigation.col-md-2{
     background-color: #333;
     font-size: 2em;
     text-align: center;
-    border: 4px solid #000;
+    border: 20px solid #000;
     /*padding: 10% 0%;*/
     padding: 0px 0px 0px 0px;
 }
@@ -316,6 +275,34 @@ div.navigation.col-md-2{
     border: 1px white solid;
 }
 
+.gallery-info > .overlay {
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    background-color: #000;
+    opacity: 0.65;
+    display: block;
+}
+
+.gallery-info > .overlay > h1, p{
+    color: #FFF;
+    font-weight: 500;
+/*    text-shadow: 0 0 0.2em #AA0036, 0 0 0.2em #AA0036,
+        0 0 0.2em #AA0036;*/
+}
+
+.gallery-info > .overlay > h1{
+    font-size: 1.0em;
+    color: #FFF;
+/*    text-shadow: 0 0 0.2em #AA0036, 0 0 0.2em #AA0036,
+        0 0 0.2em #AA0036;*/
+}
+
+.gallery-info > .overlay > p{
+    font-size: 0.8em;
+    /*color: white; text-shadow: black 0.1em 0.1em 0.2em;*/
+}
+
 @media (max-width: 1200px){
     #gallery-header, #gallery-subheader{
         font-size: 0.8em;
@@ -334,6 +321,13 @@ div.navigation.col-md-2{
     }
 }
 
+
+@media(max-width: 900px){
+    #gallery-sidebar{
+        display: none;
+        margin-left: 200px;
+    }
+}
 /*.content{
 
 }*/

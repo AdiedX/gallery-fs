@@ -8,6 +8,8 @@ mongoose.connect('mongodb://localhost/gallery-fs');
 var Schema = mongoose.Schema;
 
 var projectSchema = new Schema({
+    devLinkedIn: String,
+    devGitHub: String,
     projectName: String,
     projectPitch: String,
     projectDescription: String,
@@ -40,6 +42,8 @@ var seedData = function() {
                 imageUrl = project.image.original;
             }
             var projObject = {
+                devLinkedIn: dev.linkedin.siteStandardProfileRequest.url || '',
+                devGitHub: dev.github_url || '',
                 projectName: project.name || '',
                 projectPitch: project.pitch || '',
                 projectDescription: project.description || '',
