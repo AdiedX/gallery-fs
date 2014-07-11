@@ -165,8 +165,22 @@ p.project-developers{
     color: #000;
 }
 
-.project-screenshot{
-    height: 500px;
+@media(max-width: 5000px){
+    .project-screenshot{
+        height: 800px;
+    }
+}
+
+@media(max-width: 1400px){
+    .project-screenshot{
+        height: 500px;
+    }
+}
+
+@media(max-width: 870px){
+    .project-screenshot{
+        height: 300px;
+    }
 }
 
 .project-socialicons{
@@ -208,11 +222,25 @@ div.navigation.col-md-2{
     padding: 0px 0px 0px 0px;
 }
 
-@media (max-width: 1199px){
+@media(max-width: 5000px){
     .gallery-row{
-        height: 600px;
+        height: 450px;
     }
 }
+
+@media (max-width: 1199px){
+    .gallery-row{
+        height: 370px;
+    }
+}
+
+@media(max-width: 990px){
+    .gallery-row{
+        height: 500px;
+    }
+}
+
+
 
 #gallery-sidebar{
     background-color: black;
@@ -298,12 +326,11 @@ div.navigation.col-md-2{
 }
 
 
-@media(max-width: 900px){
+/*@media(max-width: 900px){
     #gallery-sidebar{
-        display: none;
-        margin-left: 200px;
+        width: 90px;
     }
-}
+}*/
 
 /*----------------------*/
 /*    MAIN PAGE         */

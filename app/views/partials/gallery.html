@@ -23,7 +23,7 @@
         </div>
         <div class="zn animated fadeIn content" ng-repeat="project in projectData | filter: searchFunc">
             <div ng-show="project.screenshotLink !== ''">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 gallery-row" style="background-image: url('{{project.screenshotLink}}'); background-size: cover; background-repeat: no-repeat; background-position: 50% 0%;" ng-mouseenter="mouseEvent = true" ng-mouseleave="mouseEvent = false" ng-class="{'gallery-info': mouseEvent === true}">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 gallery-row" style="background-image: url('{{project.screenshotLink}}'); background-size: cover; background-repeat: no-repeat; background-position: 50% 0%;" ng-mouseenter="mouseEvent = true" ng-mouseleave="mouseEvent = false" ng-class="{'gallery-info': mouseEvent === true}">
                     <div class="overlay" ng-show="mouseEvent === true" ng-click="$location.path('/project/' + project.id)"> <br><br><br><br><br><br>
                         <h1>{{project.projectName}}</h1>
                         <p>{{project.projectPitch}}</p>
