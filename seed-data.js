@@ -3,7 +3,11 @@
 var mongoose = require('mongoose');
 var async = require('async');
 
-mongoose.connect('mongodb://localhost/gallery-fs');
+if(process.env.NODE_ENV === "production") {
+	mongoose.connect("mongodb://heroku:w-Ia4C7DR84BYee0Wqp-FOh6Sf1V8Bhn7uk6kguQ3sKIhQ2Z8Ju8OeR7U-F2NVCIUbxTpAcUwgXpszZXa1SlgA@kahana.mongohq.com:10052/app27324445");
+} else {
+	mongoose.connect('mongodb://localhost/gallery-fs');
+}
 
 var Schema = mongoose.Schema;
 
@@ -34,8 +38,9 @@ var devs = [{"__v":16,"_id":"53b33addabd37908005c91bb","cohort":"April 2014","em
 
 var seedData = function() {
     async.eachSeries(devs, function(dev, callback){
-        // console.log(dev);
+        console.log(dev);
         async.eachSeries(dev.projects, function(project, callback){
+            console.log("project", project);
             // SETTING UP THE IMAGE URL:
             var imageUrl = '';
             if (project.image) {

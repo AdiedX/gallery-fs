@@ -1,6 +1,6 @@
 
 
-<div id="gallery-holy">
+<div id="gallery-holy" style="background-color: black;">
         <div class="navigation ">
             <!-- col-lg-2 col-md-2 col-sm-2 col-xs-0 -->
             <div id="gallery-sidebar">
@@ -21,9 +21,12 @@
                 <input id="gallery-search" class="zn animated fadeIn" type="search" placeholder="  Search" ng-model="search">
             </div>
         </div>
-        <div class="zn animated fadeIn content" ng-repeat="project in projectData | filter: searchFunc">
+
+        <div style="background-color: black;">
+            <!-- id="gallery-isotope" isotope-item="isotope-item" -->
+        <div class="zn animated fadeIn content col-xs-12 col-sm-12 col-md-6 col-lg-4" ng-class="{'large':inside===true}" ng-repeat="project in projectData | filter: searchFunc" ng-mouseenter="inside=true" ng-mouseleave="inside=false" style="padding: 0px; background-color: black;">
             <div ng-show="project.screenshotLink !== ''">
-                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 gallery-row" style="background-image: url('{{project.screenshotLink}}'); background-size: cover; background-repeat: no-repeat; background-position: 50% 0%;" ng-mouseenter="mouseEvent = true" ng-mouseleave="mouseEvent = false" ng-class="{'gallery-info': mouseEvent === true}">
+                <div class="gallery-row" style="background-image: url('{{project.screenshotLink}}'); background-size: cover; background-repeat: no-repeat; background-position: 50% 0%;" ng-mouseenter="mouseEvent = true" ng-mouseleave="mouseEvent = false" ng-class="{'gallery-info': mouseEvent === true}">
                     <div class="overlay" ng-show="mouseEvent === true" ng-click="$location.path('/project/' + project.id)"> <br><br><br><br><br><br>
                         <h1>{{project.projectName}}</h1>
                         <p>{{project.projectPitch}}</p>
@@ -31,6 +34,7 @@
                 </div>
             </div>
 
+        </div>
         </div>
 
 </div>

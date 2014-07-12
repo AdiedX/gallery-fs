@@ -219,6 +219,7 @@ module.exports = function (grunt) {
     // additional tasks can operate on them
     useminPrepare: {
       html: ['<%= yeoman.app %>/views/index.html',
+             '<%= yeoman.app %>/views/partials/main.html',
              '<%= yeoman.app %>/views/index.jade'],
       options: {
         dest: '<%= yeoman.dist %>/public'
@@ -229,10 +230,16 @@ module.exports = function (grunt) {
     usemin: {
       html: ['<%= yeoman.dist %>/views/{,*/}*.html',
              '<%= yeoman.dist %>/views/{,*/}*.jade'],
+      partials: ['<%= yeoman.dist %>/views/partials/*.html'],
       css: ['<%= yeoman.dist %>/public/styles/{,*/}*.css'],
       options: {
-        assetsDirs: ['<%= yeoman.dist %>/public']
-      }
+        assetsDirs: ['<%= yeoman.dist %>/public/**/'],
+	      patterns: {
+		partials: [[/['"]images\/([^"']+)["']/gm, 'Replacing backstretch images']]
+	      }
+
+      },
+
     },
 
     // The following *-min tasks produce minified files in the dist folder

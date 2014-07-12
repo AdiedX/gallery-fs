@@ -7,7 +7,8 @@ var app = angular.module('galleryFsApp', [
   'ngResource',
   'ngSanitize',
   'ngRoute',
-  'wu.masonry'
+  'wu.masonry',
+  'iso.directives'
 ]);
 
 app.config(function ($routeProvider, $locationProvider, $httpProvider) {

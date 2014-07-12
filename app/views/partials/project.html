@@ -3,13 +3,15 @@
 <!--
 <div class="project-floatLeft">
 </div> -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-53c04c7f2a875a42"></script>
 <div style="background-color: black;">
     <section class="project-section">
         <div class="project-container">
             <div class="project-screenshot">
-                <a href="{{projectData.liveUrl || '/project/:id'}}">
+                <a href="{{projectData.liveUrl}}" ng-show="projectData.liveUrl">
                     <img style="height: 100%; width: 100%; background-size: cover; background-repeat: no-repeat; background-position: 50% 0%;" src="{{projectData.screenshotLink}}" class="da animated fadeIn">
                 </a>
+                <img ng-hide="projectData.liveUrl" style="height: 100%; width: 100%; background-size: cover; background-repeat: no-repeat; background-position: 50% 0%;" src="{{projectData.screenshotLink}}" class="da animated fadeIn">
             </div>
             <br><br>
             <p class="project-header zo animated bounceInLeft">
@@ -28,12 +30,8 @@
                 <br><br>
                 {{projectData.projectDescription}}
             </p>
-            <br>
-    <!--         <div class="project-screencast" ng-show="projectData.screencastLink !== ''">
-                Screencast goes here
-            </div> -->
-            <br>
-            <p class="project-developers zz animated bounceInLeft">
+            <br><br>
+            <p class="project-developers dg animated bounceInLeft">
                 <span>Meet the Developers</span>
                 <br>
                 <div class="zz animated bounceInLeft" ng-repeat="dev in projectData.developers" style="font-size: 1.5em; font-weight: 300;">
@@ -41,30 +39,32 @@
                 </div>
             </p>
             <br><br>
-            <div class="project-socialicons">
-                <p>This is where the social network icons go</p>
-            </div>
-            <br><br>
-            <div class="project-comments">
-                <!-- We are doing comments the HTML way -->
-                <!-- begin htmlcommentbox.com -->
-                 <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Widget</a> is loading comments...
-                 </div>
-                 <link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
-                <script type="text/javascript" id="hcb"> /*<!--*/   if(!window.hcb_user){
-                            hcb_user={};
-                        }
-                        (function(){
-                            var s=document.createElement("script"),
-                            l=(""+window.location).replace(/'/g,"%27") || hcb_user.PAGE,
-                            h="//www.htmlcommentbox.com";
+            <div class="project-socialicons zz animated bounceInLeft">
+                <span>Share</span>
+                <br><br><br>
+                <!-- Go to www.addthis.com/dashboard to customize your tools -->
+                <div class="addthis_sharing_toolbox">
 
-                            s.setAttribute("type","text/javascript");
-                            s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&opts=16862&num=10");
-                            if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);
-                        })(); /*-->*/
-                </script>
-                <!-- end htmlcommentbox.com -->
+                </div>
+            </div>
+            <br><br><br><br>
+            <!-- galleryprojects.disqus.com -->
+            <div class="project-comments zz animated fadeIn">
+                    <div id="disqus_thread"></div>
+                    <script type="text/javascript">
+                        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                        var disqus_shortname = 'galleryprojects'; // required: replace example with your forum shortname
+
+                        /* * * DON'T EDIT BELOW THIS LINE * * */
+                        (function() {
+                            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                        })();
+                    </script>
+                    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
             </div>
             <br><br><br><br>
         </div>
