@@ -139,16 +139,17 @@ div.container-fluid.ng-scope{
     padding-right: 15px;
 }
 
-.project-header > a{
+.project-header span.fa{
     text-decoration: none;
     color: black;
 }
 
 .project-pitch{
     color: black;
-    font-size: 1.4em;
-    padding-bottom: 30px;
-    border-bottom: 1px solid gray;
+    font-size: 1.6em;
+    clear: both;
+    /*padding-bottom: 30px;*/
+    /*border-bottom: 1px solid gray;*/
 }
 
 p.project-description{
@@ -192,7 +193,7 @@ p.project-developers{
 }
 
 .project-section{
-    background-color: black;
+    background-color: #36454F;
     margin-left: 10%;
     margin-right: 10%;
     color: #000;
@@ -245,9 +246,22 @@ p.project-developers{
     }
 }
 
+.project-dev-icons{
+    display: inline;
+    padding-left: 1%;
+}
+
+.project-dev-icons span{
+    color: black;
+}
+
 /*----------------------*/
 /*    GALLERY PAGE      */
 /*----------------------*/
+
+.fixHole{
+    display: none;
+}
 
 a.fa{
     text-decoration: none;
@@ -306,7 +320,7 @@ div.navigation.col-md-2{
     margin-left: -200px;
     text-align: center;
     font-size: 2em;
-    padding-top: 40px;
+    padding-top: 15px;
     width: 200px;
     min-height: 100%;
     position: fixed;
@@ -315,12 +329,14 @@ div.navigation.col-md-2{
 #gallery-header{
     font-weight: 600;
     font-size: 0.65em;
-    padding: 10px;
+    padding: 5px;
+    margin: 0px;
 }
 
 #gallery-subheader{
     font-weight: 400;
     font-size: 1.0em;
+    margin: 0px;
 }
 
 #gallery-subheader, #gallery-header{
@@ -351,18 +367,22 @@ div.navigation.col-md-2{
     display: block;
 }
 
+#gallery-search{
+    border-radius: 20px;
+}
+
 .gallery-info > .overlay > h1, p{
     color: #FFF;
     font-weight: 500;
 }
 
 .gallery-info > .overlay > h1{
-    font-size: 1.0em;
+    font-size: 0.9em;
     color: #FFF;
 }
 
 .gallery-info > .overlay > p{
-    font-size: 0.8em;
+    font-size: 0.65em;
 }
 
 @media (max-width: 1200px){

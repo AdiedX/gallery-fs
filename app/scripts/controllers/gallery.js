@@ -27,11 +27,9 @@ app.controller('GalleryCtrl', function ($scope, $http, $location) {
         }
 
         return text_val;
-
     }
     $scope.$watch('search', function(newval, oldval) {
-        $scope.$emit('iso-method', {name:null, params:null})
-
+        $scope.$emit('iso-method', {name:null, params:null});
     });
 });
 

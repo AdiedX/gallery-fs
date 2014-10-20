@@ -17,14 +17,19 @@
             <p class="project-header zo animated bounceInLeft">
                 {{projectData.projectName}}
                     <span ng-show="projectData.github !== ''">
-                        <a href="{{projectData.github}}" class="fa fa-github"></a>
+                        <a href="{{projectData.github}}">
+                            <span class="fa fa-github">
+
+                            </span>
+                        </a>
                     </span>
             </p>
-            <br><br><br><br>
+            <br><br>
             <p class="project-pitch zo animated bounceInLeft">
                 {{projectData.projectPitch}}
             </p>
-            <br><br>
+            <br>
+            <hr style="color: #000;">
             <p class="project-description zn animated bounceInLeft">
                 <span>Description</span>
                 <br><br>
@@ -35,12 +40,25 @@
                 <span>Meet the Developers</span>
                 <br>
                 <div class="zz animated bounceInLeft" ng-repeat="dev in projectData.developers" style="font-size: 1.5em; font-weight: 300;">
-                    {{dev}}  <span ng-show="{{projectData.devLinkedIn}}"><a href="{{projectData.devLinkedIn}}" class="fa fa-linkedin"></a><span> <span ng-show="projectData.devGitHub"><a href="{{projectData.devGitHub}}" class="fa fa-github"></a></span>
+                    {{dev}}
+                    <span class="project-dev-icons" ng-show="{{projectData.devLinkedIn}}">
+                        <a href="{{projectData.devLinkedIn}}">
+                            <span class="fa fa-linkedin">
+
+                            </span>
+                        </a>
+                    <span>
+                    <span class="project-dev-icons" ng-show="{{projectData.devGitHub}}">
+                        <a href="{{projectData.devGitHub}}">
+                            <span class="fa fa-github">
+                            </span>
+                        </a>
+                    </span>
                 </div>
             </p>
             <br><br>
             <div class="project-socialicons zz animated bounceInLeft">
-                <span>Share</span>
+                <span style="font-size: 1.9em;">Share</span>
                 <br><br><br>
                 <!-- Go to www.addthis.com/dashboard to customize your tools -->
                 <div class="addthis_sharing_toolbox">
